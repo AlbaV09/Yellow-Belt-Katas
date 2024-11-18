@@ -2,7 +2,7 @@
 {
     public string name;
     private int health = 80;
-    private int level = 0;
+    private int level = 1;
     private int experience = 0;
     
     public int Health
@@ -52,8 +52,8 @@
     public void GainExperience(int exp)
     {
         experience += exp;
-        LevelUp();
         Console.WriteLine($"Player {name} gained {exp} experience.");
+        LevelUp();
     }
 }
 
